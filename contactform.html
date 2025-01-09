@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact From</title>
+    <style>
+        body{
+            max-width: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .contact-form{
+       
+            width: 100%;
+            max-width: 400px;
+            margin:50px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form h2{
+            
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="send_email.php" id="contactForm" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+
+            <button type="submit" style="color: yellowgreen;">Send</button>
+        </form>
+
+    </div>
+
+    
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script src="script.js"></script>
+</body>
+
+</html>
