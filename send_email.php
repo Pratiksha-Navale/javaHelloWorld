@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $email = htmlspecialchars($_POST["email"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    $to = "acharyarushi07@gmail.com";
+    $to = "navalepratiksha16@gmail.com";
     $subject = "Contact Form Submistion";
     $headers = "From:$email\r\n";
     $headers.="Replay-to: $email\r\n";
